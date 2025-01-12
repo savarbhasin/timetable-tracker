@@ -43,12 +43,12 @@ export function useTimetableProgress(timetableData: TimetableData) {
   };
 
   const getOverallProgress = () => {
-    const totalTasks = timetableData.steps.reduce((sum, step) => 
+    const totalQuestions = timetableData.steps.reduce((sum, step) => 
       sum + step.tasks.reduce((sum, task) => sum + task.count, 0), 0);
-    const completedTasksCount = timetableData.steps.reduce((sum, step) => 
+    const completedQuestionsCount = timetableData.steps.reduce((sum, step) => 
       sum + step.tasks.reduce((sum, task) => 
         sum + (completedTasks.has(task.id) ? task.count : 0), 0), 0);
-    return (completedTasksCount / totalTasks) * 100;
+    return (completedQuestionsCount / totalQuestions) * 100;
   };
 
   const moveToNextStep = () => {
@@ -76,4 +76,3 @@ export function useTimetableProgress(timetableData: TimetableData) {
     moveToNextStep
   };
 }
-
