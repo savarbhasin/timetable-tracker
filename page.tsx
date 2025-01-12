@@ -15,8 +15,11 @@ const timetableData: TimetableData = {
       tasks: [
         { id: "3-1", date: "11th Jan (Sat)", description: "Complete", count: 10 },
         { id: "3-2", date: "12th Jan (Sun)", description: "Complete", count: 12 },
-        { id: "3-3", date: "13th–16th Jan (Mon–Thu)", description: "Complete 3 questions/day", count: 12 },
-        { id: "3-4", date: "17th Jan (Fri)", description: "Complete", count: 6 },
+        { id: "3-3-1", date: "13th Jan (Mon)", description: "Complete 3 questions", count: 3 },
+        { id: "3-3-2", date: "14th Jan (Tue)", description: "Complete 3 questions", count: 3 },
+        { id: "3-3-3", date: "15th Jan (Wed)", description: "Complete 3 questions", count: 3 },
+        { id: "3-3-4", date: "16th Jan (Thu)", description: "Complete 3 questions", count: 3 },
+        { id: "3-4", date: "17th Jan (Fri)", description: "Complete", count: 6 }
       ],
     },
     {
