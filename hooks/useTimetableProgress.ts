@@ -57,6 +57,12 @@ export function useTimetableProgress(timetableData: TimetableData) {
     }
   };
 
+  const moveToPreviousStep = () => {
+    if (currentStepIndex > 0) {
+      setCurrentStepIndex(prev => prev - 1);
+    }
+  };
+
   useEffect(() => {
     const currentStep = timetableData.steps[currentStepIndex];
     if (currentStep) {
@@ -73,6 +79,7 @@ export function useTimetableProgress(timetableData: TimetableData) {
     getStepProgress, 
     getOverallProgress, 
     currentStepIndex,
-    moveToNextStep
+    moveToNextStep,
+    moveToPreviousStep
   };
 }
