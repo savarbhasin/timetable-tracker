@@ -181,8 +181,10 @@ export default function Home() {
     getStepProgress, 
     getOverallProgress, 
     currentStepIndex,
-    moveToNextStep
+    moveToNextStep,
+    moveToPreviousStep
   } = useTimetableProgress(timetableData);
+
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -236,15 +238,24 @@ export default function Home() {
           progress={getStepProgress(currentStep.id)}
         />
       )}
-      {currentStepIndex < timetableData.steps.length - 1 && (
-        <Button 
-          onClick={moveToNextStep}
-          className="mt-4 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-2 px-4 rounded-full hover:from-indigo-600 hover:to-purple-600 transition-all duration-200 ease-in-out"
-        >
-          Next Step
-        </Button>
-      )}
+      <div className="mt-4 flex space-x-4">
+        {currentStepIndex > 0 && (
+          <Button 
+            onClick={moveToPreviousStep}
+            className="bg-gradient-to-r from-gray-600 to-gray-800 text-white font-bold py-2 px-4 rounded-full hover:from-gray-700 hover:to-gray-900 transition-all duration-200 ease-in-out"
+          >
+            Previous Step
+          </Button>
+        )}
+        {currentStepIndex < timetableData.steps.length - 1 && (
+          <Button 
+            onClick={moveToNextStep}
+            className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-2 px-4 rounded-full hover:from-indigo-600 hover:to-purple-600 transition-all duration-200 ease-in-out"
+          >
+            Next Step
+          </Button>
+        )}
+      </div>
     </div>
   );
 }
-
