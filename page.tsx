@@ -29,10 +29,10 @@ const timetableData: TimetableData = {
       tasks: [
         { id: "4-1", date: "18th Jan (Sat)", description: "Complete", count: 8 },
         { id: "4-2", date: "19th Jan (Sun)", description: "Complete", count: 8 },
-        { id: "4-3", date: "20th Jan (Mon)", description: "Complete 4 questions", count: 4 },
-        { id: "4-3", date: "21st Jan (Tue)", description: "Complete 4 questions", count: 4 },
-        { id: "4-3", date: "22nd Jan (Wed)", description: "Complete 4 questions", count: 4 },
-        { id: "4-3", date: "23rd Jan (Thu)", description: "Complete 4 questions", count: 4 },
+        { id: "4-3", date: "20th Jan (Mon)", description: "Complete", count: 4 },
+        { id: "4-4", date: "21st Jan (Tue)", description: "Complete", count: 4 },
+        { id: "4-5", date: "22nd Jan (Wed)", description: "Complete ", count: 4 },
+        { id: "4-6", date: "23rd Jan (Thu)", description: "Complete", count: 4 },
       ],
     },
     {
