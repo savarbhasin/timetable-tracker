@@ -50,8 +50,10 @@ const timetableData: TimetableData = {
       title: "Linked List",
       dates: "11th February – 13th February",
       tasks: [
-        { id: "6-1", date: "11th–13th Feb (Tue–Thu)", description: "Complete 4 questions/day", count: 8 },
-        { id: "6-2", date: "14th Feb (Fri)", description: "Complete", count: 3 },
+        { "id": "6-1", "date": "11th Feb (Tue)", "description": "Complete 4 questions", "count": 4 },
+        { "id": "6-2", "date": "12th Feb (Wed)", "description": "Complete 4 questions", "count": 4 },
+        { "id": "6-3", "date": "13th Feb (Thu)", "description": "Complete 4 questions", "count": 4 },
+        { "id": "6-4", "date": "14th Feb (Fri)", "description": "Complete 3 questions", "count": 3 }
       ],
     },
     {
