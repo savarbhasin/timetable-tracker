@@ -63,15 +63,15 @@ export function useTimetableProgress(timetableData: TimetableData) {
     }
   };
 
-  useEffect(() => {
-    const currentStep = timetableData.steps[currentStepIndex];
-    if (currentStep) {
-      const isStepCompleted = currentStep.tasks.every(task => completedTasks.has(task.id));
-      if (isStepCompleted) {
-        moveToNextStep();
-      }
-    }
-  }, [completedTasks, currentStepIndex, timetableData.steps]);
+  // useEffect(() => {
+  //   const currentStep = timetableData.steps[currentStepIndex];
+  //   if (currentStep) {
+  //     const isStepCompleted = currentStep.tasks.every(task => completedTasks.has(task.id));
+  //     if (isStepCompleted) {
+  //       moveToNextStep();
+  //     }
+  //   }
+  // }, [completedTasks, currentStepIndex, timetableData.steps]);
 
   return { 
     completedTasks, 
