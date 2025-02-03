@@ -43,7 +43,6 @@ const timetableData: TimetableData = {
         { "id": "5-1", "date": "24th Jan (Fri)", "description": "Complete", "count": 5 },
         { "id": "5-2", "date": "25th Jan (Sat)", "description": "Complete", "count": 5 },
         { "id": "5-3", "date": "26th Jan (Sun)", "description": "Complete", "count": 5 },
-        { "id": "5-4", "date": "27th–30th Jan (Mon–Thu)", "description": "Complete additional questions", "count": 5 }
       ]
     },
     {
