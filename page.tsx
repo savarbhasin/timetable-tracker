@@ -40,9 +40,9 @@ const timetableData: TimetableData = {
       "title": "Strings",
       "dates": "24th January – 30th January",
       "tasks": [
-        { "id": "5-1", "date": "24th Jan (Fri)", "description": "Complete", "count": 5 },
-        { "id": "5-2", "date": "25th Jan (Sat)", "description": "Complete", "count": 5 },
-        { "id": "5-3", "date": "26th Jan (Sun)", "description": "Complete", "count": 5 },
+        { "id": "5-1", "date": "1st Feb (Fri)", "description": "Complete", "count": 5 },
+        { "id": "5-2", "date": "2nd Feb (Sat)", "description": "Complete", "count": 5 },
+        { "id": "5-3", "date": "3rd Feb (Mon)", "description": "Complete", "count": 5 },
       ]
     },
     {
